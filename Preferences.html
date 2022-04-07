@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marsh Creek Cleaning Signups</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <h1 id="preferences">Preferences</h1>
+        <div class="preferences">
+        <img id="bubbles" class="column" src="https://media.giphy.com/media/cAv1t940DC8la/giphy.gif" alt="Cinderella in bubbles">
+        <h3>Family Contact Preferences</h3>
+        <h4>Please enter your family-name, along with your preferred way of contact (website, email, text, phone) below:</h4>
+        <ul id="except">
+            <li>With the exception to selecting 'website', the information displayed on MLS will be used for point of contact.</li>
+        </ul>
+    </div>
+        <form id="radios">
+            <div><input id="last-name" name="last-name" value="Last Name" minlength="3" maxlength="15" onfocus="(this.value == 'Last Name') && (this.value = '')" onblur="(this.value == '') && (this.value = 'Last Name')" /></div>
+            <input type='radio' id="website" name="web-sel" value="website">
+            <label for="website">website</label><br>
+            <input type='radio' id="email" name="email-sel" value="email">
+            <label for="email">e-mail</label><br>
+            <input type='radio' id="text" name="text-sel" value="text">
+            <label for="text">text</label><br>
+            <input type='radio' id="phone" name="phone-sel" value="phone">
+            <label for="phone">phone</label><br>
+            <input class="enter" type="submit" value="Set Preference">
+        </form>
+        <div>
+            <a href="index.html" class="signup">**Return to homepage**</a>
+</body>
